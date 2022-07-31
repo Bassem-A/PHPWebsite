@@ -26,8 +26,9 @@
 </body>
 </html>
 
-
 <?php
+
+//Vulnerable code(2022)
 
 $command = "copyHTML.py ",escapeshellcmd($_POST['URL']),escapeshellcmd($_POST['protocol']);
 echo shell_exec($command);
